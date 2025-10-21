@@ -8,7 +8,7 @@ const app = express()
 
 
 app.use(cors({  
-    origin: 'https://authentication-app-fullstack-project-2.onrender.com', //'http://localhost:3000',   
+    origin: 'https://authenticate-taupe.vercel.app', //'http://localhost:3000',   
     credentials:true,
 }))
 
