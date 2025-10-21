@@ -22,7 +22,7 @@ const Signup = () => {
     useEffect(() => {
                 const checkAuth = async () => {
                     try{
-                        const res = await axios.get('https://authentication-app-fullstack-project.onrender.com/auth/verify', {
+                        const res = await axios.get('https://authentication-app-fullstack-project-2.onrender.com/auth/verify', {
                         //const res = await axios.get('http://localhost:10000/auth/verify', {
                             withCredentials:true
                         })
@@ -40,8 +40,8 @@ const Signup = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-       // axios.post('https://yarnix-social.onrender.com/auth/signup', {username, email, password, phone, address})
-        axios.post('http://localhost:10000/auth/signup', {username, email, password, phone, address})
+       axios.post('https://authentication-app-fullstack-project-2.onrender.com/auth/signup', {username, email, password, phone, address})
+       //  axios.post('http://localhost:10000/auth/signup', {username, email, password, phone, address})
         .then((res) => {
             if(res.data.status){
                 // toast.success('user registered')

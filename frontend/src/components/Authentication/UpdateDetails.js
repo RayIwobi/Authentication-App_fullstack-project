@@ -15,7 +15,7 @@ function UpdateDetails() {
 
     axios.defaults.withCredentials = true
      useEffect(() => {
-      axios.get('https://authentication-app-fullstack-project.onrender.com/auth/verify', {withCredentials:true})
+      axios.get('https://authentication-app-fullstack-project-2.onrender.com/auth/verify', {withCredentials:true})
        //   axios.get('http://localhost:10000/auth/verify', {withCredentials:true})
         .then((res) => {
             if(res.data.status){
@@ -28,7 +28,7 @@ function UpdateDetails() {
     }, [navigate])
 
     useEffect(() => {
-     axios.get('https://authentication-app-fullstack-project.onrender.com/auth/dashboard',{ withCredentials: true })
+     axios.get('https://authentication-app-fullstack-project-2.onrender.com/auth/dashboard',{ withCredentials: true })
       // axios.get('http://localhost:10000/auth/dashboard',{ withCredentials: true })
       .then(res => setProfile(res.data))
       .catch(err => console.log(err))
@@ -40,7 +40,7 @@ function UpdateDetails() {
     }
 
     const handleclick = () =>{
-      axios.put('https://authentication-app-fullstack-project.onrender.com/auth/update', profile, { withCredentials: true})
+      axios.put('https://authentication-app-fullstack-project-2.onrender.com/auth/update', profile, { withCredentials: true})
      //     axios.put('http://localhost:10000/auth/update', profile, { withCredentials: true})
       .then(res => {
         if(res.data.status){
