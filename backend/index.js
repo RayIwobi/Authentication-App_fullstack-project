@@ -10,7 +10,7 @@ const app = express()
 app.use(cors({  
     origin: 'https://authenticate-taupe.vercel.app', //'http://localhost:3000',   
     credentials:true,
-}))
+})) 
 
 
 const  {UserRouter } = require('./routes/user.js') 
