@@ -73,7 +73,7 @@ const ForgotPassword = () => {
                 <button type='submit' disabled={loading} className='submit-button'>
                     {loading ? 'Sending...' : 'Send'}
                 </button><br/><br/>
-                <Link to='/' className='forgotpassd'><h4 id='a1'>Back to dashboard</h4></Link>
+                <Link to='/' className='forgotpassd'><h4 id='a1'>Back to login</h4></Link>
             </form>
         </div>
     )
