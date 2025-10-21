@@ -21,8 +21,8 @@ const ForgotPassword = () => {
         e.preventDefault()
         setLoading(true)
 
-       // axios.post(`https://nediecom.onrender.com/auth/reset-password/${token}`, {password} , {withCredentials:true})
-        axios.post(`https://yarnix-social.onrender.com/auth/reset-password/${token}`, {password} , {withCredentials:true})
+       axios.post(`https://authentication-app-fullstack-project.onrender.com/auth/reset-password/${token}`, {password} , {withCredentials:true})
+        // axios.post(`https://yarnix-social.onrender.com/auth/reset-password/${token}`, {password} , {withCredentials:true})
         .then((res) => {
             if(res.data.status){
                 toast.success("Password reset successfully")

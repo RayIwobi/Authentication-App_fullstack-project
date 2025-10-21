@@ -22,8 +22,8 @@ const Signup = () => {
     useEffect(() => {
                 const checkAuth = async () => {
                     try{
-                       // const res = await axios.get('https://yarnix-social.onrender.com/auth/verify', {
-                        const res = await axios.get('http://localhost:10000/auth/verify', {
+                        const res = await axios.get('https://authentication-app-fullstack-project.onrender.com/auth/verify', {
+                        //const res = await axios.get('http://localhost:10000/auth/verify', {
                             withCredentials:true
                         })
                         if (res.data.status === true){

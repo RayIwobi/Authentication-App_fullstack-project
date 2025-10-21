@@ -19,8 +19,8 @@ function Login() {
 
         
         useEffect(() => {
-            // const res = await axios.get('https://yarnix-social.onrender.com/auth/verify', {
-            axios.get('http://localhost:10000/auth/verify', {withCredentials:true})
+             axios.get('https://authentication-app-fullstack-project.onrender.com/auth/verify', {withCredentials:true})
+            //axios.get('http://localhost:10000/auth/verify', {withCredentials:true})
             .then(res => {
                 if (res.data.status === true){
                         navigate('/dashboard')
@@ -38,8 +38,8 @@ function Login() {
             //     toast.warning("You need to add your email")
             // }
             e.preventDefault()
-            // axios.post('https://yarnix-social.onrender.com/auth/login',{email, password}, {withCredentials: true})
-            axios.post('http://localhost:10000/auth/login',{email, password}, {withCredentials: true})
+             axios.post('https://authentication-app-fullstack-project.onrender.com/auth/login',{email, password}, {withCredentials: true})
+            //axios.post('http://localhost:10000/auth/login',{email, password}, {withCredentials: true})
             .then((res) => {
                 if(res.data.status){
                     console.log(res.data.status)
