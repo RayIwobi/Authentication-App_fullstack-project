@@ -29,14 +29,12 @@
 .sign-up-form h2,h5{
     font-family: 'Libre Baskerville';
 }
-label{
-    font-family: 'Libre Baskerville';
-}
-
 
 label{
     display: block;
     margin-bottom: 8px;
+    font-family: 'Libre Baskerville';
+    text-align: left;
 }
 
 input{

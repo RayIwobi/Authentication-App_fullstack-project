@@ -63,11 +63,12 @@ function Login() {
         <ToastContainer position="top-right" autoClose={3000} />
     <form className='sign-up-form' onSubmit={handleLogin} style={{backgroundColor:'white'}}>
 
-       <h3 style={{fontSize:'14px'}}>
-        Authentication App.  <Link to='signup' style={{fontSize:'14px', textDecoration:'none', color:'blue'}}>Sign up here</Link>
+       <h3 style={{fontSize:'20px'}}>
+        Authentication App.  
         </h3><br/>
 
-        <div style={{fontSize:'25px', textAlign:'center'}}>Sign in</div>
+
+        <div style={{fontSize:'19px', textAlign:'Center'}}>Sign in</div>
         {/* <h5 style={{textAlign:'center'}}>We need your details to serve you better</h5> */}
         <br/>
 
