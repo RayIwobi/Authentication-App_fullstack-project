@@ -22,7 +22,7 @@ const Signup = () => {
     useEffect(() => {
                 const checkAuth = async () => {
                     try{
-                        const res = await axios.get('https://authentication-app-fullstack-project.onrender.com/auth/verify', {
+                        const res = await axios.get('https://authenticate-app.vercel.app/auth/verify', {
                         //const res = await axios.get('http://localhost:10000/auth/verify', {
                             withCredentials:true
                         })
@@ -40,7 +40,7 @@ const Signup = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-       axios.post('https://authentication-app-fullstack-project.onrender.com/auth/signup', {username, email, password, phone, address})
+       axios.post('https://authenticate-app.vercel.app/auth/signup', {username, email, password, phone, address})
        //  axios.post('http://localhost:10000/auth/signup', {username, email, password, phone, address})
         .then((res) => {
             if(res.data.status){

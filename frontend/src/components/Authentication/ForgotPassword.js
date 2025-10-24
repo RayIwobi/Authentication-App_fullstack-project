@@ -17,7 +17,7 @@ const ForgotPassword = () => {
         useEffect(() => {
                     const checkAuth = async () => {
                         try{
-                            const res = await axios.get('https://authentication-app-fullstack-project.onrender.com/auth/verify', {
+                            const res = await axios.get('https://authenticate-app.vercel.app/auth/verify', {
                             //const res = await axios.get('http://localhost:12000/auth/verify', {
                                 withCredentials:true
                             })
@@ -37,7 +37,7 @@ const ForgotPassword = () => {
         e.preventDefault()
         setLoading(true)
 
-       axios.post('https://authentication-app-fullstack-project.onrender.com/auth/forgotpassword', {email})
+       axios.post('https://authenticate-app.vercel.app/auth/forgotpassword', {email})
         // axios.post('http://localhost:12000/auth/forgotpassword', {email})
         .then((res) => {
             if(res.data.status){
